@@ -1564,7 +1564,7 @@ body {
     .service-prices__button-offer::after {
       content: '';
       position: absolute;
-      background-image: url(./static/arrPink.svg);
+      background-image: url("/img/icons/arrPink.svg");
       width: 24px;
       height: 24px; }
     @media (min-width: 1120px) {
