@@ -1,0 +1,49 @@
+.btn-more {
+  display: flex;
+  width: 132px;
+  height: 24px;
+  border: 0;
+  padding: 0;
+  font-family: 'TT Lakes';
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  align-items: center;
+  gap: 16px;
+  background: none;
+  color: #1b1c21;
+  cursor: pointer;
+  &--margin {
+    margin: 16px 0px;
+    @media (min-width: 768px) {
+      display: flex;
+      margin-top: 10px;
+    }
+    @media (min-width: 1120px) {
+      display: flex;
+    }
+  }
+}
+
+.section__conteiner-brands {
+  .btn-more {
+    display: none;
+    margin-left: 24px;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    @media (min-width: 1120px) {
+      display: flex;
+      margin-left: 3.21vw;
+    }
+    @media (min-width: 1440px) {
+      margin-left: 31px;
+    }
+  }
+}
+
+body::-webkit-scrollbar {
+  // display: none;
+  // width: 5px;
+}

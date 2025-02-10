@@ -1,0 +1,191 @@
+.container {
+  @media (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+}
+// .aside {
+//   background-color: rgba(255, 255, 255, 0.96);
+//   width: 100vw;
+//   height: 100vh;
+//   @media (min-width: 1440px) {
+//     width: 320px;
+//     position: fixed;
+//     background-color: transparent;
+//   }
+// }
+.menu-wrap {
+  background-color: rgba(255, 255, 255, 0.96);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+  transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
+  -moz-transform: translateX(-150%);
+  -ms-transform: translateX(-150%);
+  -o-transform: translateX(-150%);
+  z-index: 3000;
+
+  @media (min-width: 1440px) {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    width: 320px;
+    position: fixed;
+    background-color: transparent;
+  }
+}
+.menu--active {
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+}
+.menu {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100vh;
+  margin: 0;
+  box-shadow: 16px 0 52px #0e185033;
+  overflow-y: auto;
+  z-index: 2000;
+  @media (min-width: 1440px) {
+    display: flex;
+    box-shadow: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+    &-margin {
+      margin-top: 18px;
+      margin-bottom: 46px;
+    }
+    &__logo {
+      @media (min-width: 1440px) {
+        padding-left: 22px;
+      }
+    }
+    &__btn-close {
+      margin: 0 17px 0 24px;
+      @media (min-width: 1440px) {
+        display: none;
+      }
+    }
+    &__btn-search {
+      margin-left: auto;
+      margin-right: 24px;
+    }
+  }
+  &__list-btn {
+    list-style-type: none;
+    padding: 0 0 0 24px;
+    margin: 0;
+  }
+  &__btn {
+    margin-bottom: 32px;
+    @media (min-width: 1440px) {
+      margin-bottom: 27px;
+    }
+    &-name {
+      text-decoration: none;
+      color: rgba(27, 28, 33, 1);
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      font-weight: 500;
+      position: relative;
+      &:hover {
+        opacity: 0.75;
+      }
+      &:focus {
+        color: #7e7e82;
+      }
+      &:focus::before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 32px;
+        background-color: #41f6d7;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        left: -24px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .contacts {
+    display: grid;
+    margin-left: 24px;
+    margin-top: auto;
+    margin: auto 0 32px 24px;
+    &__list-btn {
+      display: flex;
+      gap: 16px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 16px 0;
+    }
+    &__info {
+      display: grid;
+      font-style: normal;
+      margin-bottom: 40px;
+      gap: 12px;
+    }
+    &__email {
+      text-decoration: none;
+      color: rgba(27, 28, 33, 1);
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      font-weight: 500;
+    }
+    &__tel {
+      text-decoration: none;
+      color: rgba(27, 28, 33, 1);
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+      font-weight: bold;
+    }
+    .menu__lang {
+      margin: 0;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      gap: 7px;
+      padding: 0;
+      &-btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font-family: 'TT Lakes';
+        color: #1b1c21;
+        font-size: 16px;
+        font-weight: 500;
+        &:hover {
+          opacity: 0.75;
+        }
+        &:focus {
+          color: #7e7e82;
+        }
+      }
+    }
+  }
+}
