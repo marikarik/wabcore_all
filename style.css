@@ -1295,7 +1295,7 @@ body {
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
-    background-image: url("/img/icons/go.svg");
+    background-image: url(./static/go.svg);
     background-repeat: no-repeat;
     background-position: 90%;
     padding-left: 16px; }
@@ -1564,7 +1564,7 @@ body {
     .service-prices__button-offer::after {
       content: '';
       position: absolute;
-      background-image: url("/img/icons/arrPink.svg");
+      background-image: url(./static/arrPink.svg);
       width: 24px;
       height: 24px; }
     @media (min-width: 1120px) {
