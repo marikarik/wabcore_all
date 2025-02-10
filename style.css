@@ -787,7 +787,7 @@ button.swiper-pagination-bullet {
   -o-transform: translate(0); }
 
 .menu {
-  background-color: #ffffff;
+  background-color: #fff;
   position: fixed;
   top: 0;
   display: flex;
@@ -910,7 +910,7 @@ button.swiper-pagination-bullet {
   border: 0;
   width: 40px;
   height: 40px;
-  background: #FF3E79;
+  background: #ff3e79;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -920,10 +920,12 @@ button.swiper-pagination-bullet {
     filter: brightness(85%); }
 
 body {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin: 0;
-  font-family: 'TT Lakes';
-  overflow: overlay; }
+  font-family: 'TT Lakes'; }
+
+.no-scroll {
+  overflow: hidden; }
 
 @media (min-width: 1440px) {
   .content {
@@ -1238,8 +1240,8 @@ body {
 .head-section {
   max-width: 1120px;
   margin: 0 auto 0 auto;
-  background-image: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
-  border-top: 1px solid #d9fff5;
+  background-image: linear-gradient(-270deg, #f8f8f8 0%, #fff 98.61%);
+  border-top: 1px solid #b8ffec;
   display: flex;
   align-items: center; }
   @media (min-width: 1120px) {
@@ -1257,20 +1259,10 @@ body {
     letter-spacing: -0.2px;
     text-transform: uppercase;
     color: #7e7e82; }
-
-.head-section {
-  margin: 0;
-  background-image: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
-  border-top: 1px solid #d9fff5; }
-  .head-section__title {
-    margin: 0;
-    padding: 16px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-transform: uppercase;
-    color: #7e7e82; }
+    @media (min-width: 1440px) {
+      .head-section__title {
+        padding-left: 32px;
+        padding-right: 32px; } }
 
 .section {
   margin: 0 auto; }
@@ -1288,7 +1280,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #eaeaea;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -1399,7 +1391,7 @@ body {
   right: 16px;
   bottom: 16px;
   display: flex;
-  color: #ffffff;
+  color: #fff;
   letter-spacing: -0.15px;
   font-size: 12px;
   font-weight: 600;
@@ -1476,7 +1468,7 @@ body {
         display: grid;
         margin: 24px;
         border: 1px solid #eaeaea;
-        background-color: white;
+        background-color: #fff;
         border-radius: 6px;
         -webkit-border-radius: 6px;
         -moz-border-radius: 6px;
@@ -1500,7 +1492,7 @@ body {
     row-gap: 16px;
     width: 260px;
     height: 200px;
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #eaeaea;
     border-radius: 6px; }
     @media (min-width: 768px) {
@@ -1520,7 +1512,9 @@ body {
         -o-border-radius: 0; } }
     @media (min-width: 1440px) {
       .service-prices__card {
-        max-width: 1056px; } }
+        max-width: 1056px;
+        padding-left: 24px;
+        padding-right: 24px; } }
   .service-prices__info {
     grid-area: service-name; }
   .service-prices__price {
@@ -1715,7 +1709,7 @@ body {
     cursor: pointer;
     bottom: 16px;
     display: flex;
-    color: #ffffff;
+    color: #fff;
     letter-spacing: -0.15px;
     font-size: 12px;
     font-weight: 600;
