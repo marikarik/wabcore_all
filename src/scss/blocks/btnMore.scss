@@ -12,7 +12,7 @@
   align-items: center;
   gap: 16px;
   background: none;
-  color: #1b1c21;
+  color: $darkGray;
   cursor: pointer;
   &--margin {
     margin: 16px 0px;
@@ -41,9 +41,4 @@
       margin-left: 31px;
     }
   }
-}
-
-body::-webkit-scrollbar {
-  // display: none;
-  // width: 5px;
 }

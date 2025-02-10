@@ -1,7 +1,7 @@
 .modal {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: $opacityWhite;
   position: fixed;
   right: 0;
   top: 0;
@@ -20,9 +20,9 @@
     right: 0;
     top: 0;
     max-width: 320px;
-    background-color: #fff;
+    background-color: $mainWhite;
     height: 100vh;
-    border-left: 1px solid #d9fff5;
+    border-left: 1px solid $light-turquoise;
     display: flex;
     padding: 24px 16px 0 16px;
     flex-direction: column;
@@ -43,12 +43,11 @@
       height: 40px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
-      background-color: rgb(65, 246, 215);
+      background-color: $turquoise;
       left: -16px;
       top: -3px;
       @media (min-width: 768px) {
         left: -32px;
-        // top: -4px;
       }
     }
   }
@@ -58,7 +57,7 @@
     width: 288px;
     height: 48px;
     border-radius: 8px;
-    border: 1px solid #eaeaea;
+    border: 1px solid $extra-light-gray;
     font-size: 16px;
     font-family: 'TT Lakes';
     line-height: 24px;
@@ -72,12 +71,12 @@
     line-height: 16px;
     font-family: 'TT Lakes';
     font-weight: 500;
-    color: #7e7e82;
+    color: $lightGray;
   }
   &__link {
     cursor: pointer;
     text-decoration: none;
-    color: #ff3e79;
+    color: $pink;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -92,7 +91,7 @@
     cursor: pointer;
     bottom: 16px;
     display: flex;
-    color: #ffffff;
+    color: $mainWhite;
     letter-spacing: -0.15px;
     font-size: 12px;
     font-weight: 600;
@@ -102,7 +101,7 @@
     align-items: center;
     width: 136px;
     height: 32px;
-    background-color: #ff3e79;
+    background-color: $pink;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;

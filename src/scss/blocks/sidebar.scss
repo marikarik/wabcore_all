@@ -5,18 +5,9 @@
     min-height: 100vh;
   }
 }
-// .aside {
-//   background-color: rgba(255, 255, 255, 0.96);
-//   width: 100vw;
-//   height: 100vh;
-//   @media (min-width: 1440px) {
-//     width: 320px;
-//     position: fixed;
-//     background-color: transparent;
-//   }
-// }
+
 .menu-wrap {
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: $opacityWhite;
   position: fixed;
   top: 0;
   height: 100vh;
@@ -48,7 +39,7 @@
   -o-transform: translate(0);
 }
 .menu {
-  background-color: #ffffff;
+  background-color: $mainWhite;
   position: fixed;
   top: 0;
   display: flex;
@@ -56,7 +47,7 @@
   width: 320px;
   height: 100vh;
   margin: 0;
-  box-shadow: 16px 0 52px #0e185033;
+  box-shadow: 16px 0 52px $shadow;
   overflow-y: auto;
   z-index: 2000;
   @media (min-width: 1440px) {
@@ -102,7 +93,7 @@
     }
     &-name {
       text-decoration: none;
-      color: rgba(27, 28, 33, 1);
+      color: $darkGray;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
@@ -112,14 +103,14 @@
         opacity: 0.75;
       }
       &:focus {
-        color: #7e7e82;
+        color: $lightGray;
       }
       &:focus::before {
         content: '';
         position: absolute;
         width: 4px;
         height: 32px;
-        background-color: #41f6d7;
+        background-color: $turquoise;
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
         left: -24px;
@@ -148,7 +139,7 @@
     }
     &__email {
       text-decoration: none;
-      color: rgba(27, 28, 33, 1);
+      color: $darkGray;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
@@ -156,7 +147,7 @@
     }
     &__tel {
       text-decoration: none;
-      color: rgba(27, 28, 33, 1);
+      color: $darkGray;
       font-size: 24px;
       line-height: 32px;
       letter-spacing: -0.6px;
@@ -176,14 +167,14 @@
         padding: 0;
         margin: 0;
         font-family: 'TT Lakes';
-        color: #1b1c21;
+        color: $darkGray;
         font-size: 16px;
         font-weight: 500;
         &:hover {
           opacity: 0.75;
         }
         &:focus {
-          color: #7e7e82;
+          color: $lightGray;
         }
       }
     }

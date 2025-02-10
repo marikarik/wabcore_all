@@ -23,9 +23,11 @@ const sidebar = document.querySelector('.menu-wrap')
 
 btnBurger.addEventListener('click', function () {
   sidebar.classList.add('modal--active')
+  document.body.classList.add('no-scroll')
 })
 btnClose.addEventListener('click', function () {
   sidebar.classList.remove('modal--active')
+  document.body.classList.remove('no-scroll')
 })
 
 // Открытие модальных окон
@@ -34,17 +36,20 @@ const btnFeedback = document.querySelectorAll('.btn__open-mod-feedback')
 const modFeedback = document.querySelector('.modal-feedback')
 const modCall = document.querySelector('.modal-call')
 const btnCloseMod = document.querySelectorAll('.modal__btn-close')
+const modals = document.querySelectorAll('.modal-overlay')
 
 for (let i = 0; i < btnCall.length; i++) {
   let btn = btnCall[i]
   btn.addEventListener('click', function () {
     modCall.classList.add('modal--active')
+    document.body.classList.add('no-scroll')
   })
 }
 for (let i = 0; i < btnFeedback.length; i++) {
-  let btnF = btnFeedback[i]
-  btnF.addEventListener('click', function () {
+  let btn = btnFeedback[i]
+  btn.addEventListener('click', function () {
     modFeedback.classList.add('modal--active')
+    document.body.classList.add('no-scroll')
   })
 }
 
@@ -55,6 +60,16 @@ for (let i = 0; i < btnCloseMod.length; i++) {
     const modal = btn.closest('.modal')
     if (modal) {
       modal.classList.remove('modal--active')
+      document.body.classList.remove('no-scroll')
+    }
+  })
+}
+for (let i = 0; i < modals.length; i++) {
+  let modal = modals[i]
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      modal.classList.remove('modal--active')
+      document.body.classList.remove('no-scroll')
     }
   })
 }
