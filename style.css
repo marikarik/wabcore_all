@@ -1344,7 +1344,7 @@ body {
     .swiper-wrapper {
       width: auto;
       margin-left: 32px;
-      padding: 0; } }
+      padding: 2px; } }
 
 .swiper-pagination {
   position: static;
